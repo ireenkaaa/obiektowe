@@ -43,17 +43,16 @@ void display_student(student &s)
     cout<<s.plec<<endl;
     cout<<s.numer_ind<<endl;
 }
-void add_random (student &s)
-{
+void add_random (student &s) {
     string rodzaj[2];
-    rodzaj[0]="kobieta";
-    rodzaj[1]="mezczyzna";
+    rodzaj[0] = "kobieta";
+    rodzaj[1] = "mezczyzna";
 
-    s.numer_ind=rand()%1000000+100000;
-    s.plec=rodzaj[rand()%2];
-    s.pesel="000000000";
-    s.imie="irena";
-    s.nazwisko="piat";
+    s.numer_ind = rand() % 1000000 + 100000;
+    s.plec = rodzaj[rand() % 2];
+    s.pesel = "000000000";
+    s.imie = "irena";
+    s.nazwisko = "nazwisko";
 }
 void display_all_students(student s[], int n)
 {
